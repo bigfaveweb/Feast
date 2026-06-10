@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FEAST Cuisine</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body {
+      background: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* NAV */
+    .navbar {
+      background: #000;
+      border-bottom: 2px solid gold;
+      padding: 15px 0;
+    }
+
+    .navbar-brand span {
+      color: gold;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 22px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: gold !important;
+    }
+
+    /* HERO */
+    .hero {
+      height: 90vh;
+      background: url("https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 750px;
+    }
+
+    .hero h1 {
+      color: gold;
+      font-size: 55px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      color: #ddd;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .btn-gold {
+      margin-top: 25px;
+      background: gold;
+      color: black;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-gold:hover {
+      background: #ffdf4d;
+      transform: scale(1.05);
+    }
+
+    /* MENU */
+    .food_section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: gold;
+      margin-bottom: 50px;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .food-card {
+      background: #141414;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: 1px solid #2a2a2a;
+      transition: 0.3s;
+    }
+
+    .food-card:hover {
+      transform: translateY(-8px);
+      border-color: gold;
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.15);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .food-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .food-body {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .food-body h5 {
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .price {
+      color: gold;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      padding: 50px 0;
+      border-top: 2px solid gold;
+      text-align: center;
+      color: #aaa;
+    }
+
+    footer h4 {
+      color: gold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>FEAST</span></a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+      <span style="color:white;">☰</span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="cousine.html">cousine</a></li>
+     
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>IDIAN CUISINE</h1>
+<p>
+  Savor the rich flavors of Italy with classic Italian dishes,
+  crafted with passion and served for weddings, parties, corporate events, and unforgettable celebrations.
+</p>
+   
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="food_section" id="menu">
+  <div class="container">
+
+    <h2 class="section-title">Our Signature Menu</h2>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/birayani.jpg">
+          <div class="food-body">
+            <h5>Chicken Biryani</h5>
+            <p class="price">$100 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/paneer.jpg">
+          <div class="food-body">
+            <h5>Classic Lasagna</h5>
+            <p class="price">$15 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/Fettuccine Alfredo.jpg">
+          <div class="food-body">
+            <h5>Fettuccine Alfredo</h5>
+            <p class="price">$18 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/chana.webp">
+          <div class="food-body">
+            <h5>chana masala</h5>
+            <p class="price">$10 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/butter chick.jpg">
+          <div class="food-body">
+            <h5>Butter Chicken</h5>
+            <p class="price">$12 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/naan.webp">
+          <div class="food-body">
+            <h5>Butter Naan & curry</h5>
+            <p class="price">$20 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+ <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/cripsky.jpg">
+          <div class="food-body">
+            <h5>Crispy Samosa</h5>
+            <p class="price">$10 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/dosa.jpg">
+          <div class="food-body">
+            <h5>Masala Dosa</h5>
+            <p class="price">$12 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="food-card">
+          <img src="images/chicken biya.webp">
+          <div class="food-body">
+            <h5>Chicken Biryani</h5>
+            <p class="price">$20 <a href="cart.html">🛒</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h4>FEAST</h4>
+  <p>Luxury food experience for weddings & events</p>
+  <p>© 2026 FEAST</p>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+</html>
