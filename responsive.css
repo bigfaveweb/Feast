@@ -29,6 +29,9 @@ padding-left: 0;
 .menu-s .nav-item{
   transform: translateX(-340px);
 }
+  .containa{
+      transform: translateX(140px);
+  }
 
   .offer_section .box {
     flex-direction: column;
