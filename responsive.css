@@ -30,7 +30,7 @@ padding-left: 0;
   transform: translateX(-340px);
 }
   .containa{
-      transform: translateX(140px);
+      transform: translateX(40px,-30px);
   }
 
   .offer_section .box {
